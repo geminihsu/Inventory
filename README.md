@@ -71,6 +71,10 @@ Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W2','M01','M010
 ```Bash
 Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W2','M02','M02001',1);
 ```
+The table data below  
+![alt text](https://github.com/geminihsu/Inventory/blob/master/screenshot/DataProcessing.png)
+
+
 4. After established the database and then we can start insert data and query data from table. 
 
 * Query W1
