@@ -43,7 +43,8 @@ The table schema below
 ```Bash
 Alter table FGTransaction MODIFY TrnTime DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL;
 ```
-3.  Finally, inserted Content example.  
+3.  Finally, inserted Content example. 
+* Insert Item
 ```Bash
 Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01001',1);
 ```
@@ -53,9 +54,11 @@ Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M010
 ```Bash
 Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01001',1);
 ```
+* Delete Item
 ```Bash
 delete from FGTransaction where Seq = 3;
 ```
+* Insert Item(The seq will continue increase because the column attribute is AUTO_INCREMENT)
 ```Bash
 Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01002',1);
 ```
