@@ -31,7 +31,7 @@ rm '#' LoadModule php5_module libexec/apache2/libphp5.so
 
 # Data preprocessing
 
-1. The first of all, created the FGTransaction table.
+**1. The first of all, created the FGTransaction table.**
 ```Bash
 create table FGTransaction(Seq BIGINT AUTO_INCREMENT primary key NOT NULL,Warehouse VARCHAR(50) NOT NULL,ModelNo VARCHAR(50) NOT NULL,SN VARCHAR(50) NOT NULL,Quantity int NOT NULL,TrnTime DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL); 
 ```
@@ -39,11 +39,11 @@ The table schema below
 ![alt text](https://github.com/geminihsu/Inventory/blob/master/screenshot/TableSchema.png)
 
 
-2.  Secondly, modified the TrnTime column default value is current timestamp.  
+**2.  Secondly, modified the TrnTime column default value is current timestamp.**  
 ```Bash
 Alter table FGTransaction MODIFY TrnTime DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL;
 ```
-3.  Finally, inserted Content example. 
+**3.  Finally, inserted Content example. **
 * Insert Item
 ```Bash
 Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01001',1);
@@ -75,7 +75,7 @@ The table data below
 ![alt text](https://github.com/geminihsu/Inventory/blob/master/screenshot/DataProcessing.png)
 
 
-4. After established the database and then we can start insert data and query data from table. 
+**4. After established the database and then we can start insert data and query data from table.** 
 
 * Query W1
 ```Bash
