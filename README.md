@@ -27,7 +27,8 @@ The table schema below
 ![alt text](https://github.com/geminihsu/Inventory/blob/master/screenshot/TableSchema.png)
 
 
-2.  Secondly, modified the TrnTime column default value is current timestamp.  Alter table FGTransaction MODIFY TrnTime DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL;
+2.  Secondly, modified the TrnTime column default value is current timestamp.  
+<p style='color:blue'>Alter table FGTransaction MODIFY TrnTime DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL;</p>
 3.  Finally, inserted Content example.  
 Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01001',1);
 Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01001',-1);
