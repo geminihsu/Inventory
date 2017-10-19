@@ -1,5 +1,5 @@
 # Inventory
-The Web site access data from mysql database table. It support insert item into database and query item from database by Warehouse column.
+The Web site allow user to access data from mysql database. It also support insert item into database and query item from database by Warehouse column.
 # Develop tool
 **Operation System :** macOS Sierra version 10.12.1  
 **Web Server version :** Apache/2.4.28 (Unix)  
