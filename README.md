@@ -98,8 +98,8 @@ The web site only have three page. The index.html has two button allow you to re
 # Index Page
 ![alt text](https://github.com/geminihsu/Inventory/blob/master/screenshot/index.png)
 
-# insert item Page
+# Item Insert Page
 ![alt text](https://github.com/geminihsu/Inventory/blob/master/screenshot/InsertItem.png)
 
-# query item Page
+# Item Query Page
 ![alt text](https://github.com/geminihsu/Inventory/blob/master/screenshot/QueryAll.png)
