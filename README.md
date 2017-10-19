@@ -10,13 +10,23 @@ DataBase version: 5.7.17 MySQL Community Server (GPL)
 
 # Prerequisites
 
-1. Enable Apache on Mac OS X  
-apachectl start  
+1. Enable Apache on Mac OS X 
+```Bash
+apachectl start
+```
 2. Enable PHP for Apache  
-cd /etc/apache2/  
-cp httpd.conf httpd.conf.bak  
-vi httpd.conf  
-rm '#' LoadModule php5_module libexec/apache2/libphp5.so  
+```Bash
+cd /etc/apache2/
+```
+```Bash
+cp httpd.conf httpd.conf.bak
+```
+```Bash
+vi httpd.conf
+```
+```Bash
+rm '#' LoadModule php5_module libexec/apache2/libphp5.so
+```
 3. apachectl restart
 
 # DataBase
@@ -34,15 +44,30 @@ The table schema below
 Alter table FGTransaction MODIFY TrnTime DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL;
 ```
 3.  Finally, inserted Content example.  
+```Bash
 Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01001',1);
+```
+```Bash
 Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01001',-1);
+```
+```Bash
 Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01001',1);
+```
+```Bash
 delete from FGTransaction where Seq = 3;
+```
+```Bash
 Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01002',1);
+```
+```Bash
 Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01003',1);
+```
+```Bash
 Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W2','M01','M01004',1);
+```
+```Bash
 Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W2','M02','M02001',1);
-
+```
 4. After established the database and then we can start insert data and query data from table. 
 
 # Web Page Architecture
