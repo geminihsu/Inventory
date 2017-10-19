@@ -1,0 +1,1 @@
+create table FGTransaction(Seq BIGINT AUTO_INCREMENT primary key NOT NULL,Warehouse VARCHAR(50) NOT NULL,ModelNo VARCHAR(50) NOT NULL,SN VARCHAR(50) NOT NULL,Quantity int NOT NULL,TrnTime DATETIME NOT NULL);
