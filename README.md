@@ -2,10 +2,11 @@
 The Web site access data from mysql database table. It support insert item into database and query item from database by Warehouse column.
 # Develop tool
 Operation System: macOS Sierra version 10.12.1  
-Server version: Apache/2.4.28 (Unix)  
+Web Server version: Apache/2.4.28 (Unix)  
 PHP 5.6.25 (cli) (built: Sep  6 2016 16:37:16)   
 Copyright (c) 1997-2016 The PHP Group  
-Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
+Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies  
+DataBase version: 5.7.17 MySQL Community Server (GPL)
 
 # Prerequisites
 
@@ -17,6 +18,27 @@ cp httpd.conf httpd.conf.bak
 vi httpd.conf  
 rm '#' LoadModule php5_module libexec/apache2/libphp5.so  
 3. apachectl restart
+
+# DataBase
+
+1. The first of all, created the FGTransaction table.  
+create table FGTransaction(Seq BIGINT AUTO_INCREMENT primary key NOT NULL,Warehouse VARCHAR(50) NOT NULL,ModelNo VARCHAR(50) NOT NULL,SN VARCHAR(50) NOT NULL,Quantity int NOT NULL,TrnTime DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL);  
+2.  Secondly, modified the TrnTime column default value is current timestamp.  Alter table FGTransaction MODIFY TrnTime DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL;
+3.  Finally, inserted Content example.  
+Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01001',1);
+Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01001',-1);
+Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01001',1);
+delete from FGTransaction where Seq = 3;
+Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01002',1);
+Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01003',1);
+Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W2','M01','M01004',1);
+Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W2','M02','M02001',1);
+
+4. After established the database and then we can start insert data and query data from table. 
+
+# Web Page Architecture
+
+The web site only have three page. The index.html has two button allow you to redirect to different pages.
 
 # Index Page
 ![alt text](https://github.com/geminihsu/Inventory/blob/master/screenshot/index.png)
