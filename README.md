@@ -23,6 +23,17 @@ rm '#' LoadModule php5_module libexec/apache2/libphp5.so
 
 1. The first of all, created the FGTransaction table.  
 create table FGTransaction(Seq BIGINT AUTO_INCREMENT primary key NOT NULL,Warehouse VARCHAR(50) NOT NULL,ModelNo VARCHAR(50) NOT NULL,SN VARCHAR(50) NOT NULL,Quantity int NOT NULL,TrnTime DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL);  
+mysql> DESCRIBE FGTransaction;                                                                
++-----------+-------------+------+-----+-------------------+----------------+
+| Field     | Type        | Null | Key | Default           | Extra          |
++-----------+-------------+------+-----+-------------------+----------------+
+| Seq       | bigint(20)  | NO   | PRI | NULL              | auto_increment |
+| Warehouse | varchar(50) | NO   |     | NULL              |                |
+| ModelNo   | varchar(50) | NO   |     | NULL              |                |
+| SN        | varchar(50) | NO   |     | NULL              |                |
+| Quantity  | int(11)     | NO   |     | NULL              |                |
+| TrnTime   | datetime    | NO   |     | CURRENT_TIMESTAMP |                |
++-----------+-------------+------+-----+-------------------+----------------+
 2.  Secondly, modified the TrnTime column default value is current timestamp.  Alter table FGTransaction MODIFY TrnTime DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL;
 3.  Finally, inserted Content example.  
 Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W1','M01','M01001',1);
