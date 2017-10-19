@@ -9,7 +9,8 @@ Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
 
 # Prerequisites
 
-1. Enable Apache on Mac OS X  apachectl start  
+1. Enable Apache on Mac OS X  
+apachectl start  
 2. Enable PHP for Apache  
 cd /etc/apache2/  
 cp httpd.conf httpd.conf.bak  
