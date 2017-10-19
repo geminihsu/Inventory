@@ -9,3 +9,9 @@ Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
 
 # Index Page
 ![alt text](https://github.com/geminihsu/Inventory/blob/master/screenshot/index.png)
+
+# insert item Page
+![alt text](https://github.com/geminihsu/Inventory/blob/master/screenshot/InsertItem.png)
+
+# query item Page
+![alt text](https://github.com/geminihsu/Inventory/blob/master/screenshot/QueryAll.png)
