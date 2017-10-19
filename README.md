@@ -8,4 +8,4 @@ Copyright (c) 1997-2016 The PHP Group
 Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
 
 # Index Page
-![alt text](https://github.com/geminihsu/Inventory/blob/screenshot/index.png)
+![alt text](https://github.com/geminihsu/Inventory/blob/master/screenshot/index.png)
