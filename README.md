@@ -70,6 +70,20 @@ Insert into FGTransaction(Warehouse,ModelNo,SN,Quantity) VALUES('W2','M02','M020
 ```
 4. After established the database and then we can start insert data and query data from table. 
 
+* Query W1
+```Bash
+select ModelNo,sum(Quantity) As OnHand from FGTransaction where Warehouse = 'W1' group by ModelNo;
+```
+* Query W2
+```Bash
+select ModelNo,sum(Quantity) As OnHand from FGTransaction where Warehouse = 'W2' group by ModelNo;
+```
+* Query ALL
+```Bash
+select ModelNo,sum(Quantity) As OnHand from FGTransaction group by ModelNo;
+```
+
+
 # Web Page Architecture
 
 The web site only have three page. The index.html has two button allow you to redirect to different pages.
