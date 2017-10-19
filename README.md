@@ -6,3 +6,6 @@ Server version: Apache/2.4.28 (Unix)
 PHP 5.6.25 (cli) (built: Sep  6 2016 16:37:16)   
 Copyright (c) 1997-2016 The PHP Group  
 Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
+
+# Index Page
+![alt text](https://github.com/geminihsu/Inventory/blob/screenshot/Index.png)
