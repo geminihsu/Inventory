@@ -75,7 +75,7 @@ The table data below
 ![alt text](https://github.com/geminihsu/Inventory/blob/master/screenshot/DataProcessing.png)
 
 
-**4. After established the database and then we can start insert data and query data from table.** 
+**4. After established the database ,we can start insert data and query data from table.** 
 
 * Query W1
 ```Bash
