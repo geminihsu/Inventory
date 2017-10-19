@@ -1,7 +1,7 @@
 # Inventory
 The Web site access data from mysql database table. It support insert item into database and query item from database by Warehouse column.
 # Develop tool
-Operation System: macOS Sierra version 10.12.1  
+**Operation System:** macOS Sierra version 10.12.1  
 Web Server version: Apache/2.4.28 (Unix)  
 PHP 5.6.25 (cli) (built: Sep  6 2016 16:37:16)   
 Copyright (c) 1997-2016 The PHP Group  
