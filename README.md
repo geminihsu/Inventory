@@ -1,6 +1,6 @@
 # Inventory
 The Web site allow user to access data from mysql database. It also support insert item into database and query item from database by Warehouse column.
-# Develop tool
+# Software
 **Operation System :** macOS Sierra version 10.12.1  
 **Web Server version :** Apache/2.4.28 (Unix)  
 **PHP version :** 5.6.25 (cli) (built: Sep  6 2016 16:37:16)  
@@ -29,7 +29,7 @@ rm '#' LoadModule php5_module libexec/apache2/libphp5.so
 ```
 3. apachectl restart
 
-# DataBase
+# Data preprocessing
 
 1. The first of all, created the FGTransaction table.
 ```Bash
