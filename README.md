@@ -7,6 +7,16 @@ PHP 5.6.25 (cli) (built: Sep  6 2016 16:37:16)
 Copyright (c) 1997-2016 The PHP Group  
 Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
 
+# Prerequisites
+
+1.Enable Apache on Mac OS X  apachectl start  
+2.Enable PHP for Apache  
+cd /etc/apache2/  
+cp httpd.conf httpd.conf.bak  
+vi httpd.conf  
+rm '#' LoadModule php5_module libexec/apache2/libphp5.so  
+3.apachectl restart
+
 # Index Page
 ![alt text](https://github.com/geminihsu/Inventory/blob/master/screenshot/index.png)
 
